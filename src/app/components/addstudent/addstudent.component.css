@@ -1,0 +1,22 @@
+.addstudent .add h4{
+    color: rgb(0, 0, 0);
+}
+
+.addstudent label{
+    color: rgb(0, 0, 0);
+}
+
+.addstudent input{
+    background-color: rgb(255, 255, 255);
+    border-bottom: 1px solid rgb(0, 0, 0);
+    margin: 20px;
+}
+
+
+
+.addstudent button{
+    border:0px ;
+    background-color: rgb(178, 18, 18);
+    color: white;
+    
+}

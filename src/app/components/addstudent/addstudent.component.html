@@ -1,0 +1,29 @@
+<div class="container">
+  <div class="addstudent">
+    <div class="add">
+      <h4>Add Student</h4>
+    </div>
+  <div *ngIf="message" class="alert alert-success alert-dismissible fade show" role="alert">
+    <strong>Added Succesfully</strong> 
+    <button (click)="removemsg()"  type="button"  data-bs-dismiss="alert" aria-label="Close">X</button>
+  </div>
+  
+  <form [formGroup]="Myform" (ngSubmit)="add()">
+      <p>
+        <label for="Name">Name:</label>
+        <input type="text" name="name" formControlName="name">
+        <!-- <span *ngIf="Myform.get('firstname').hasError('required')">Enter the firstname</span> -->
+        </p>
+    
+        <p>
+          <label for="E-mail">E-mail:</label>
+          <input type="text" name="email" formControlName="email">
+        </p>
+    
+        <p>
+          <button type="submit">Add</button><br>
+          <!-- <button type="reset">Reset</button> -->
+        </p>
+    </form>
+  </div>
+</div>
